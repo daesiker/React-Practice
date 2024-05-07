@@ -49,7 +49,7 @@ class Store {
   }
 
   _sortHistory(history1:HistoryData, history2:HistoryData) {
-    return history2.date < history1.date;
+    return history2.date.getDate() - history1.date.getDate();
   }
 
   removeHistory(keyword:string) {
